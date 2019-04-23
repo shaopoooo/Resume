@@ -25,6 +25,10 @@
 		text-align: center;
 	}
 
+	.aboutme > img {
+		width:160px;
+	}
+
 	.aboutme > div {
 
 	}
@@ -152,6 +156,11 @@
 	.works{
 		padding: 1rem;
 	}
+
+	.works > p {
+		text-align: center;
+	}
+
 	.git {
 		padding: 1rem;
 	}
