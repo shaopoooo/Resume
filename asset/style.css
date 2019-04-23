@@ -6,10 +6,15 @@
 	--shadow:0 1px 5px rgba(104,104,104,0.8);
 }
 
+.En{
+	font-family: 'Roboto',sans-serif;
+}
+
 
 @media screen{
 	body{
 		margin:0px;
+		font-family:微軟正黑體;
 	}
 
 	.aboutme {
@@ -78,19 +83,28 @@
 	}
 
 	.works {
+		display: flex;
+		flex-direction: column;
 		padding:6rem;
 		background: var(--primary);
 		color: #FFFFFF;
+		align-items: center;
 	}
 	.works > h2 {
 		font-size: 2rem;
 		color:#FFFFFF;
 		font-weight: bolder; 
+		text-align: center;
 	}
 	.works > p {
 		letter-spacing: 3px;
 		font-size: 20px;
 	}
+
+	.works > ul {
+		padding-inline-start:50px;
+	}
+
 	li{
 		margin: 5px;
 	}
@@ -120,9 +134,51 @@
 }
 
 @media screen and (max-width: 480px){
-	
+	.aboutme {
+		padding:1rem;
+	}
+	.aboutme > img{
+		max-width: 100px;
+	}
+
+	.subskills {
+		display: grid;
+		grid-template-columns: 1fr; 
+	}
+	.subskills > div {
+		width: 100%;
+	}
+
+	.works{
+		padding: 1rem;
+	}
+	.git {
+		padding: 1rem;
+	}
+	.gitsubsection {
+		display: grid;
+		grid-gap: 1rem;
+		grid-template-columns:1fr;
+
+	}
 }
 
 @media screen and (min-width:481px) and (max-width:768px){
+	.skills {
+		padding:1rem;
+	}
+	.subskills > div > h3 {
+		min-height: 75px;
+	}
+	.works {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
 
+	.gitsubsection {
+		display: grid;
+		grid-gap: 1rem;
+		grid-template-columns:1fr;
+
+	}
 }
