@@ -132,6 +132,15 @@
 	.textsection > p {
 		letter-spacing: 2px;
 	}
+	.textsection > ul {
+		padding-inline-start:10px;
+	}
+
+	.imgsection{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	} 
 
 	.imgsection > a > img {
 		width: 100%;
