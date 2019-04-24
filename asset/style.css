@@ -10,7 +10,6 @@
 	font-family: 'Roboto',sans-serif;
 }
 
-
 @media screen{
 	body{
 		margin:0px;
@@ -103,6 +102,7 @@
 	.works > p {
 		letter-spacing: 3px;
 		font-size: 20px;
+		text-align: center;
 	}
 
 	.works > ul {
@@ -132,8 +132,12 @@
 		letter-spacing: 2px;
 	}
 
-	.imgsection > img {
+	.imgsection > a > img {
 		width: 100%;
+		transition:0.75s;
+	}
+	.imgsection > a > img:hover{
+		transform: scale(1.2);
 	}
 }
 
@@ -168,7 +172,6 @@
 		display: grid;
 		grid-gap: 1rem;
 		grid-template-columns:1fr;
-
 	}
 }
 
@@ -188,6 +191,27 @@
 		display: grid;
 		grid-gap: 1rem;
 		grid-template-columns:1fr;
+	}
+}
+@media print {
+	.icon {
+		display: none;
+	}
+	.works {
+		page-break-before: always;
+	}
+	.skills > .title {
+		display: none;
+	}
+	.aboutme > img {
+		width:160px;
+	}
 
+	.imgsection > a > img{
+		width:30%;
+	}
+
+	.git > .title {
+		display: none;
 	}
 }
