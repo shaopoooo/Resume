@@ -10,7 +10,8 @@
 	font-family: 'Roboto',sans-serif;
 }
 
-@media screen{
+
+@media screen {
 	body{
 		margin:0px;
 		font-family:微軟正黑體;
@@ -109,7 +110,7 @@
 		padding-inline-start:50px;
 	}
 
-	li{
+	li {
 		margin: 5px;
 	}
 
@@ -120,7 +121,7 @@
 	.gitsubsection {
 		display: grid;
 		grid-gap: 1rem;
-		grid-template-columns:2fr 3fr;
+		grid-template-columns:2fr 1fr;
 
 	}
 
@@ -134,6 +135,7 @@
 
 	.imgsection > a > img {
 		width: 100%;
+		max-width: 300px;
 		transition:0.75s;
 	}
 	.imgsection > a > img:hover{
